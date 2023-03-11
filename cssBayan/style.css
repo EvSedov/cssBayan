@@ -2,16 +2,18 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1em;
 }
 
 .main {
     width: 100wh;
+    background-color: darkgray;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
-    background-color: darkgray;
+    padding: 0.8em;
 }
 
 .accordion {
@@ -19,3 +21,42 @@ html {
     padding: 0;
     list-style: none;
 }
+
+.accordion:hover p {
+    color:black;
+}
+
+.accordion img {
+    display: none;
+    margin: 0 auto;
+    width: 250px;
+    height: 350px;
+}
+
+.accordion div:target img {
+    display: block;
+}
+
+.accordion div:target p {
+    color: black;
+}
+
+#mem2 img {
+    width: 500px;
+}
+
+.accordion a {
+    text-decoration: none;
+}
+
+.accordion a:focus p,
+.accordion a:active p {
+    color: black;
+}
+
+.accordion p {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: blue;
+}
+
