@@ -1,0 +1,21 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100wh;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: darkgray;
+}
+
+.accordion {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
