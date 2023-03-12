@@ -34,7 +34,8 @@ html {
     transition: all 0.5s;
 }
 
-.accordion div:target img {
+.accordion div:target img,
+.accordion-item a:hover img {
     width: 250px;
     height: 350px;
 }
