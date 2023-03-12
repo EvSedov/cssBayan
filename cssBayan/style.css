@@ -22,10 +22,6 @@ html {
     list-style: none;
 }
 
-.accordion:hover p {
-    color:black;
-}
-
 .accordion img {
     display: block;
     margin: 0 auto;
@@ -36,16 +32,23 @@ html {
 
 .accordion div:target img,
 .accordion-item a:hover img {
-    width: 250px;
+    width: 240px;
     height: 350px;
+}
+
+.accordion p {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: blue;
+}
+
+.accordion:hover p {
+    color:black;
 }
 
 .accordion div:target p {
     color: black;
-}
-
-#mem2 img {
-    width: 500px;
 }
 
 .accordion a {
@@ -57,9 +60,24 @@ html {
     color: black;
 }
 
-.accordion p {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: blue;
+.accordion p::after {
+    margin-left: auto;
+    content: "";
+    width: 1.1em;
+    height: 1.1em;
 }
 
+.accordion p::after {
+    display: none;
+    background-image: url(./icons/plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.accordion:hover p::after {
+    display: inline-block;
+}
+
+.accordion div:target p::after {
+    background-image: url(./icons/close.svg);
+}
