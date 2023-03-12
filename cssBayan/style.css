@@ -27,14 +27,16 @@ html {
 }
 
 .accordion img {
-    display: none;
+    display: block;
     margin: 0 auto;
-    width: 250px;
-    height: 350px;
+    width: 0;
+    height: 0;
+    transition: all 0.5s;
 }
 
 .accordion div:target img {
-    display: block;
+    width: 250px;
+    height: 350px;
 }
 
 .accordion div:target p {
